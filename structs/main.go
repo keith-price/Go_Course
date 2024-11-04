@@ -24,8 +24,14 @@ func main() {
 		},
 	}
 
+	MrMucus.changeFirstName("Samovar")
+
 	MrMucus.print()
 
+}
+
+func (p *person) changeFirstName(newfirstName string) {
+	p.firstName = newfirstName
 }
 
 func (p person) print() {
