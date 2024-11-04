@@ -24,10 +24,16 @@ func main() {
 		},
 	}
 
+	MrMucus.changeFirstName("Wombat")
+
 	MrMucus.print()
 
 }
 
 func (p person) print() {
 	fmt.Printf("%+v", p)
+}
+
+func (p *person) changeFirstName(newFirstName string) {
+	p.firstName = newFirstName
 }
