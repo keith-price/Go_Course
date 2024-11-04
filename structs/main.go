@@ -26,6 +26,8 @@ func main() {
 
 	MrMucus.changeFirstName("Samovar")
 
+	MrMucus.changeFirstName("Wombat")
+
 	MrMucus.print()
 
 }
